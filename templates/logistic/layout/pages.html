@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    {% block scripts %}{% endblock %}
+    {% block style %}{% endblock %}
+</head>
+
+<body>
+    
+    <div id="exposition" class="closed">
+        <div class="hand" onclick='document.querySelector("#exposition").classList.toggle("closed")'>
+            <div>
+                <i class="fa fa-hand-o-left fa-fw fa-2x"></i>
+            </div>
+        </div>
+        {% block menu %}
+        {% endblock %}
+        
+    </div>sss
+    <div id="content">
+            <div id="title"></div>
+            A message for you: {{ "urls:actions:pages" | config(1,2) }}
+            1contentcontentcontent
+            {% block content %}
+            {% endblock %}
+        </div>
+</body>
+
+</html>

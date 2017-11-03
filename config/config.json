@@ -1,0 +1,35 @@
+{
+    "port": 3000,
+    "maxAgeCookie" : 31536000000,
+    "mongoose": {
+        "uri": "mongodb://localhost/chatt",
+        "options": {
+            "useMongoClient": true
+        }
+    },
+    "publicDir": "/public",
+    "countsToSee":5,
+    "urls": {
+        "api": {
+            "index": "/api/index.html",
+            "login": "/api/login.html",
+            "user": "/api/user.html",
+            "userGET": "/api/userGET.html",
+            "userADD": "/api/userADD.html",
+            "userDELETE": "/api/userDELETE.html",
+            "userEDIT": "/api/userEDIT.html",
+            "logout": "/api/logout.html",
+            "cars": "/api/cars.html",
+            "driversGET": "/api/driversGET.html",
+            "driversSET": "/api/driversGET.html",
+            "driversDELETE": "/api/driversGET.html",
+            "carsGET": "/api/carsGET.html",
+            "carsDELETE": "/api/carsDELETE.html",
+            "carsEDIT": "/api/carsEDIT.html"
+        },
+        "index": "/index.html",
+        "cars": "/cars.html",
+        "users":"/users.html",
+        "drivers":"/drivers.html"
+    }
+}
